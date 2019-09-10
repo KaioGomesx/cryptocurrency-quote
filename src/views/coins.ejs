@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <title>Cotação de criptomoedas</title>
+</head>
+<body>
+  <script src="javascript/callAPI.js"></script>
+
+  <div class="container">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Criptomoedas Disponíveis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BTC - Bitcoin</td>
+        </tr>
+        <tr>
+          <td>LTC - Litecoin</td>
+        </tr>
+        <tr>
+          <td>BCH - BCash</td>
+        </tr>
+        <tr>
+          <td>XRP - XRP (Ripple)</td>
+        </tr>
+        <tr>
+          <td>ETH - Ethereum</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <div class="alert alert-primary" role="alert">
+      Escolha uma criptomoeda para consultar a cotação da mesma
+    </div>
+  </div>
+
+  <div class="container">
+    <select id="mySelect" class="form-control" onchange="getSelectValue()">
+      <option value=""></option>
+      <option value="btc">BTC - Bitcoin</option>
+      <option value="ltc">LTC - Litecoin</option>
+      <option value="bhc">BCH - BCash</option>
+      <option value="xrp">XRP - XRP (Ripple)</option>
+      <option value="eth">ETH - Ethereum</option>
+    </select>
+    <br>
+  </div>
+  <br>
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <p class="lead"></p>
+      </div>
+    </div>
+</body>
+</html>
